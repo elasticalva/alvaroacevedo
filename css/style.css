@@ -238,13 +238,13 @@ nav ul li a {
   /*background: url("../images/home-bg.jpg") repeat scroll center center / cover;*/
   /* background-color: #001b27;*/
   background-color: #5CDB94;
-  height: 50vh;
+  height: 100vh;
   width: 100%;
 }
 
 
 #header .header-content {
-  height: 50vh;
+  height: 100vh;
   text-align: left;
   width: 100%;
   display: flex;
@@ -257,7 +257,7 @@ nav ul li a {
   font-weight: 700;
   margin-bottom: 10px;
   text-transform: uppercase;
-  color: #1d3657;
+  color: #edf5e1;
 }
 
 .header-content p {
@@ -303,7 +303,7 @@ nav ul li a {
 
 #about .div-img-bg .about-img img {
   width: 100%;
-  box-shadow: 0px 0px 85px 0px rgba(0, 0, 0, 0.14);
+  box-shadow: 0px 0px 815px 0px rgba(0, 0, 0, 0.14);
   margin-top: -60px;
   margin-left: 40px;
   height: 400px;
@@ -489,7 +489,7 @@ nav ul li a {
 .journal-block .journal-info .journal-txt h4 a {
   display: block;
   font-size: 19px;
-  line-height: 24px;
+  line-height: 204px;
   margin: 0 0 13px 0;
   font-weight: 500;
   color: #1d3657;
