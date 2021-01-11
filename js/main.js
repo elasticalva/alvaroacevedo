@@ -8,43 +8,56 @@ $(document).ready(function() {
   // ========================================================================= //
 
 
-  $(document).on("scroll", onScroll);
+  $(document).ready(function() {
 
-  $('a[href^="#"]').on('click', function(e) {
-    e.preventDefault();
-    $(document).off("scroll");
+    $(".scroll").on("click", function() {
+      //event.preventDefault();
+      var el = $(this).attr("href");
+      $('html, body').animate({
+        scrollTop: $(el).offset().top -180
+      }, 200);
+    });
+  
+  });
 
-    $('a').each(function() {
-      $(this).removeClass('active');
-      if ($(window).width() < 768) {
-        $('.nav-menu').slideUp();
+  // ========================================================================= //
+  //  //BACK TO TOP
+  // ========================================================================= //
+
+
+
+
+
+
+  $(document).ready(function(){
+	
+    //Check to see if the window is top if not then display button
+    $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+        $('#toTop a').fadeIn();
+      } else {
+        $('#toTop a').fadeOut();
       }
     });
-
-    $(this).addClass('active');
-
-    var target = this.hash,
-        menu = target;
-
-    target = $(target);
-    $('html, body').stop().animate({
-      'scrollTop': target.offset().top - 80
-    }, 500, 'swing', function() {
-      window.location.hash = target.selector;
-      $(document).on("scroll", onScroll);
+    
+    //Click event to scroll to top
+    $('#toTop a').click(function(){
+      $('html, body').animate({scrollTop : 0},100);
+      return false;
     });
+    
   });
 
 
-  function onScroll(event) {
-    if ($('.home').length) {
-      var scrollPos = $(document).scrollTop();
-      $('nav ul li a').each(function() {
-        var currLink = $(this);
-        var refElement = $(currLink.attr("href"));
-      });
-    }
-  }
+
+
+
+
+
+
+
+
+
 
   // ========================================================================= //
   //  //NAVBAR SHOW - HIDE

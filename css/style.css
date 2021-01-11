@@ -631,3 +631,17 @@ nav ul li a {
 .credits {
   font-size: 13px;
 }
+
+#filler {
+  height: 1000px;
+}
+#toTop a {
+  padding: 5px 5px;
+  background: #5CDB94;
+  color: #fff;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: none;
+  text-decoration: none;
+}
