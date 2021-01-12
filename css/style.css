@@ -648,3 +648,18 @@ nav ul li a {
   text-decoration: none;
   z-index: 100;
 }
+
+.anch{
+  position: relative;
+  top: -250px;
+}
+
+.ancho{
+  position: relative;
+  top: 100px;
+}
+
+.anc{
+  position: relative;
+  top: -180px;
+}

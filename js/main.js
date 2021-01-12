@@ -14,7 +14,7 @@ $(document).ready(function() {
       //event.preventDefault();
       var el = $(this).attr("href");
       $('html, body').animate({
-        scrollTop: $(el).offset().top -180
+        scrollTop: $(el).offset().top
       }, 400);
     });
   
