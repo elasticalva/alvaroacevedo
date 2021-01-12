@@ -15,7 +15,7 @@ $(document).ready(function() {
       var el = $(this).attr("href");
       $('html, body').animate({
         scrollTop: $(el).offset().top -180
-      }, 200);
+      }, 400);
     });
   
   });
@@ -23,9 +23,6 @@ $(document).ready(function() {
   // ========================================================================= //
   //  //BACK TO TOP
   // ========================================================================= //
-
-
-
 
 
 
@@ -42,19 +39,11 @@ $(document).ready(function() {
     
     //Click event to scroll to top
     $('#toTop a').click(function(){
-      $('html, body').animate({scrollTop : 0},100);
+      $('html, body').animate({scrollTop : 0},400);
       return false;
     });
     
   });
-
-
-
-
-
-
-
-
 
 
 
@@ -67,10 +56,10 @@ $(document).ready(function() {
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
     if (scroll > 200 ) {
-      $("#main-nav, #main-nav-subpage").slideDown(700);
+      $("#main-nav, #main-nav-subpage").slideDown(400);
       $("#main-nav-subpage").removeClass('subpage-nav');
     } else {
-      $("#main-nav").slideUp(700);
+      $("#main-nav").slideUp(400);
       $("#main-nav-subpage").hide();
       $("#main-nav-subpage").addClass('subpage-nav');
     }
