@@ -1,16 +1,16 @@
 /*global $, jQuery, alert*/
-$(document).ready(function () {
+$(document).ready(function() {
 
   'use strict';
-
+})
   // ========================================================================= //
   //  //SMOOTH SCROLL
   // ========================================================================= //
 
 
-  $(document).ready(function () {
+  $(document).ready(function() {
 
-    $(".scroll").on("click", function () {
+    $(".scroll").on("click", function() {
       //event.preventDefault();
       var el = $(this).attr("href");
       $('html, body').animate({
@@ -18,40 +18,45 @@ $(document).ready(function () {
       }, 400);
       return false;
     });
-
+  
   });
 
   // ========================================================================= //
   //  //BACK TO TOP
   // ========================================================================= //
 
-  $(document).ready(function () {
 
+
+  $(document).ready(function(){
+	
     //Check to see if the window is top if not then display button
-    $(window).scroll(function () {
+    $(window).scroll(function(){
       if ($(this).scrollTop() > 100) {
         $('#toTop a').fadeIn();
       } else {
         $('#toTop a').fadeOut();
       }
     });
-
+    
     //Click event to scroll to top
-    $('#toTop a').click(function () {
-      $('html, body').animate({ scrollTop: 0 }, 400);
+    $('#toTop a').click(function(){
+      $('html, body').animate({scrollTop : 0},400);
       return false;
     });
-
+    
   });
+
+
+
 
   // ========================================================================= //
   //  //NAVBAR SHOW - HIDE
   // ========================================================================= //
 
 
-  $(window).scroll(function () {
+  $(window).scroll(function() {
     var scroll = $(window).scrollTop();
-    if (scroll > 200) {
+    if (scroll > 200 ) {
       $("#main-nav, #main-nav-subpage").slideDown(400);
       $("#main-nav-subpage").removeClass('subpage-nav');
     } else {
@@ -65,7 +70,7 @@ $(document).ready(function () {
   //  // RESPONSIVE MENU
   // ========================================================================= //
 
-  $('.responsive').on('click', function (e) {
+  $('.responsive').on('click', function(e) {
     $('.nav-menu').slideToggle();
   });
 
@@ -75,7 +80,7 @@ $(document).ready(function () {
 
   var typed = $(".typed");
 
-  $(function () {
+  $(function() {
     typed.typed({
       strings: ["Álvaro Acevedo", "UX UI Designer", "Junior FrontEnd", "Curious", "Collaborative"],
       typeSpeed: 100,
@@ -83,6 +88,7 @@ $(document).ready(function () {
     });
   });
 
+/* Disabled JS's
 
   // ========================================================================= //
   //  Owl Carousel Services
@@ -90,20 +96,20 @@ $(document).ready(function () {
 
 
   $('.services-carousel').owlCarousel({
-    autoplay: true,
-    loop: true,
-    margin: 20,
-    dots: true,
-    nav: false,
-    responsiveClass: true,
-    responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
-  });
+      autoplay: true,
+      loop: true,
+      margin: 20,
+      dots: true,
+      nav: false,
+      responsiveClass: true,
+      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
+    });
 
   // ========================================================================= //
   //  magnificPopup
   // ========================================================================= //
 
-  var magnifPopup = function () {
+  var magnifPopup = function() {
     $('.popup-img').magnificPopup({
       type: 'image',
       removalDelay: 300,
@@ -120,7 +126,7 @@ $(document).ready(function () {
         // The "opener" function should return the element from which popup will be zoomed in
         // and to which popup will be scaled down
         // By defailt it looks for an image tag:
-        opener: function (openerElement) {
+        opener: function(openerElement) {
           // openerElement is the element on which popup was initialized, in this case its <a> tag
           // you don't need to add "opener" option if this code matches your needs, it's defailt one.
           return openerElement.is('img') ? openerElement : openerElement.find('img');
@@ -138,14 +144,14 @@ $(document).ready(function () {
 // ========================================================================= //
 //  Porfolio isotope and filter
 // ========================================================================= //
-$(window).load(function () {
+$(window).load(function(){
 
   var portfolioIsotope = $('.portfolio-container').isotope({
     itemSelector: '.portfolio-thumbnail',
     layoutMode: 'fitRows'
   });
 
-  $('#portfolio-flters li').on('click', function () {
+  $('#portfolio-flters li').on( 'click', function() {
     $("#portfolio-flters li").removeClass('filter-active');
     $(this).addClass('filter-active');
 
@@ -153,3 +159,4 @@ $(window).load(function () {
   });
 
 })
+*/
