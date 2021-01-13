@@ -4,7 +4,8 @@
 body {
   background: #ffffff;
   color: #898989;
-  font-family: BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", sans-serif;;
+  font-family: BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", sans-serif;
   font-weight: 300;
   line-height: 160%;
   letter-spacing: 0.02em;
@@ -18,7 +19,12 @@ body {
   box-sizing: border-box;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -51,7 +57,8 @@ a:hover {
   transition: all 0.5s ease-in-out 0s;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #2a83b5;
   text-decoration: underline;
 }
@@ -77,7 +84,7 @@ p {
   margin: 25px 0;
   padding: 0;
   font-size: 16px;
-  
+
   color: #999999;
   line-height: 28px;
 }
@@ -104,7 +111,8 @@ p {
   text-transform: uppercase;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover,
+.btn:focus {
   color: #fff;
 }
 
@@ -151,7 +159,7 @@ p {
   padding-bottom: 20px;
   margin-left: 7%;
   margin-right: 7%;
-  }
+}
 
 .paddsections {
   padding-top: 90px;
@@ -196,7 +204,7 @@ nav {
 nav ul li {
   float: left;
   margin-right: 15px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 14px;
   margin-left: 40px;
 }
@@ -207,7 +215,7 @@ nav ul li a {
   display: block;
   font-size: 14px;
   color: #999999;
-  font-family: 'Poppins', helvetica;
+  font-family: "Poppins", helvetica;
   font-weight: 500;
   line-height: 16px;
   text-transform: uppercase;
@@ -239,11 +247,10 @@ nav ul li a {
 #header {
   /*background: url("../images/home-bg.jpg") repeat scroll center center / cover;*/
   /* background-color: #001b27;*/
-  background-color: #5CDB94;
+  background-color: #5cdb94;
   height: 100vh;
   width: 100%;
 }
-
 
 #header .header-content {
   height: 100vh;
@@ -285,7 +292,7 @@ nav ul li a {
 .header-content .list-social li a {
   font-size: 20px;
   color: #fff;
-} 
+}
 
 /*-----------------------------------------------------------------------------------*/
 /*  Aout-us
@@ -360,8 +367,7 @@ nav ul li a {
   line-height: 44px;
 }
 
-
-.services-carousel  .owl-stage-outer {
+.services-carousel .owl-stage-outer {
   overflow: hidden;
 }
 
@@ -390,7 +396,6 @@ nav ul li a {
   display: none;
 }
 
-
 /*-----------------------------------------------------------------------------------*/
 /*  Portfolio
 /*-----------------------------------------------------------------------------------*/
@@ -416,7 +421,7 @@ nav ul li a {
   color: #999999;
   line-height: 16px;
   cursor: pointer;
-  font-family: 'Poppins', helvetica;
+  font-family: "Poppins", helvetica;
   font-weight: 500;
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -427,7 +432,8 @@ nav ul li a {
   transition: all 0.5s ease-in-out 0s;
 }
 
-#portfolio .portfolio-list .nav li:hover, #portfolio .portfolio-list .nav li.filter-active  {
+#portfolio .portfolio-list .nav li:hover,
+#portfolio .portfolio-list .nav li.filter-active {
   color: #2a83b5;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
@@ -456,7 +462,8 @@ nav ul li a {
 /*  Journal
 /*-----------------------------------------------------------------------------------*/
 
-#journal,  #journal-blog {
+#journal,
+#journal-blog {
   height: auto;
   width: 100%;
   background: #f7f7f7;
@@ -539,12 +546,12 @@ nav ul li a {
   padding-bottom: 10px;
 }
 
-#contact input, #contact textarea {
+#contact input,
+#contact textarea {
   width: 100%;
 }
 
-
-#contact  #sendmessage {
+#contact #sendmessage {
   color: #18d26e;
   border: 1px solid #18d26e;
   display: none;
@@ -554,7 +561,7 @@ nav ul li a {
   margin: 15px;
 }
 
-#contact  #errormessage {
+#contact #errormessage {
   color: red;
   display: none;
   border: 1px solid red;
@@ -564,7 +571,9 @@ nav ul li a {
   margin: 15px;
 }
 
-#contact #sendmessage.show, #contact #errormessage.show, #contact .show {
+#contact #sendmessage.show,
+#contact #errormessage.show,
+#contact .show {
   display: block;
 }
 
@@ -642,7 +651,7 @@ nav ul li a {
 }
 #toTop a {
   padding: 0px 5px;
-  background: #5CDB94;
+  background: #5cdb94;
   color: #fff;
   position: fixed;
   bottom: 10px;
@@ -652,26 +661,32 @@ nav ul li a {
   z-index: 100;
 }
 
-.anch{
+.anch {
   position: relative;
   top: -250px;
 }
 
-.ancho{
+.ancho {
   position: relative;
   top: 100px;
 }
 
-.anc{
+.anc {
   position: relative;
   top: -180px;
 }
 
-.an{
+.an {
   position: relative;
   top: -100px;
 }
 
 .fot {
   font-size: 14px;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

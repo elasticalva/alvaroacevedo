@@ -70,7 +70,10 @@
   color: #2a83b5;
 }
 
-.journal-txt h1, .journal-txt h2, .journal-txt h3, .journal-txt h4 {
+.journal-txt h1,
+.journal-txt h2,
+.journal-txt h3,
+.journal-txt h4 {
   display: block;
   line-height: normal;
   margin: 0 0 13px 0;
