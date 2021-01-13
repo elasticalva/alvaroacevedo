@@ -151,7 +151,7 @@ p {
   padding-bottom: 20px;
   margin-left: 7%;
   margin-right: 7%;
-}
+  }
 
 .paddsections {
   padding-top: 90px;
@@ -524,6 +524,9 @@ nav ul li a {
 #contact {
   height: auto;
   width: 86%;
+  /*
+  background-color: #f7f7f7;
+  */
 }
 
 .contact-details {
@@ -667,4 +670,8 @@ nav ul li a {
 .an{
   position: relative;
   top: -100px;
+}
+
+.fot {
+  font-size: 14px;
 }
