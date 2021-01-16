@@ -7,7 +7,6 @@ $(document).ready(function() {
   //  //SMOOTH SCROLL
   // ========================================================================= //
 
-
   $(document).ready(function() {
 
     $(".scroll").on("click", function() {
@@ -25,8 +24,6 @@ $(document).ready(function() {
   //  //BACK TO TOP
   // ========================================================================= //
 
-
-
   $(document).ready(function(){
 	
     //Check to see if the window is top if not then display button
@@ -43,16 +40,11 @@ $(document).ready(function() {
       $('html, body').animate({scrollTop : 0},400);
       return false;
     });
-    
   });
-
-
-
 
   // ========================================================================= //
   //  //NAVBAR SHOW - HIDE
   // ========================================================================= //
-
 
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
@@ -94,7 +86,6 @@ $(document).ready(function() {
   //  Owl Carousel Services
   // ========================================================================= //
 
-
   $('.services-carousel').owlCarousel({
       autoplay: true,
       loop: true,
@@ -134,11 +125,8 @@ $(document).ready(function() {
       }
     });
   };
-
-
   // Call the functions
   magnifPopup();
-
 });
 
 // ========================================================================= //
@@ -157,6 +145,5 @@ $(window).load(function(){
 
     portfolioIsotope.isotope({ filter: $(this).data('filter') });
   });
-
 })
 */
